@@ -13,18 +13,26 @@ Retorna o número de combinações no formato JSON.
 ### Instruções detalhadas
 
 Rodar a aplicação no Docker com os seguintes comandos no terminal:
+```
     docker build -t api-studiosol-manu .
+```
+```
     docker run -p 8080:8080 api-studiosol-manu
+```
 
 Fazer a requisição HTTP POST no endereço local http://127.0.0.1:8080/verify utilizando um arquivo JSON no seguinte formato:
+```
     {
         "score": "0x0"
     }
+```
 
 A aplicação retornará o maior número possível de combinações das pontuações no seguinte formato:
+```
     {
         "combinations": 0
     }
+```
 
 ## Lógica de implementação
 
@@ -42,8 +50,12 @@ A API está programada para retornar apenas o número de combinações, mas seri
 ## Testes
 
 A partir do arquivo test_possibleCombinations.py é possível rodar testes unitários da aplicação:
+```
     cd src
+```
+```
     python -m pytest
+```
 
 ## Tecnologias utilizadas
 
